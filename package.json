@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "This is a website for Ristorante Con Fusion",
   "main": "index.html",
+  "homepage": "https://subhamskm.github.io/confusion",
   "scripts": {
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
+    "predeploy": "npm run build",
+    "deploy": "gh=pages -d build",
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
@@ -52,6 +55,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "gh-pages": "^2.0.1"
   }
 }
