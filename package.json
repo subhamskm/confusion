@@ -22,7 +22,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.29.1",
     "del": "^3.0.0",
     "grunt": "^1.0.3",
     "grunt-browser-sync": "^2.2.0",
